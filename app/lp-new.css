@@ -1,0 +1,154 @@
+
+/* ===== 新しい構成：作り直しまで ===== */
+.lp .rebuild-flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.lp .rebuild-step{position:relative;display:flex}
+.lp .rebuild-card{flex:1;text-align:center;padding:26px 22px}
+.lp .rebuild-card h3{font-size:1.35rem;margin-top:12px}
+.lp .rebuild-card p{margin-top:8px;font-size:.9rem;line-height:1.8}
+.lp .rebuild-tag{display:inline-block;padding:2px 12px;border-radius:99px;font-size:.75rem;font-weight:800}
+.lp .rebuild-tag.sky{background:#d9effd}.lp .rebuild-tag.pink{background:#ffd9e2}.lp .rebuild-tag.mint{background:#d6f4ea}
+.lp .rebuild-arrow{position:absolute;right:-30px;top:50%;transform:translateY(-50%);font-weight:900;font-size:1.3rem;color:#176187}
+.lp .rebuild-routes{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.lp .rebuild-route{padding:18px 22px;border-radius:14px}
+.lp .rebuild-route.sky{background:#f1f8fc}.lp .rebuild-route.pink{background:#fff1f4}
+.lp .rebuild-route h3{font-size:1rem}
+.lp .rebuild-route p{margin-top:4px;font-size:.9rem}
+.lp .rebuild-cta{display:flex;justify-content:center;margin-top:32px}
+@media (max-width:900px){
+  .lp .rebuild-flow{grid-template-columns:1fr;gap:36px}
+  .lp .rebuild-arrow{right:auto;left:50%;top:auto;bottom:-30px;transform:translateX(-50%) rotate(90deg)}
+  .lp .rebuild-routes{grid-template-columns:1fr}
+}
+/* ===== 並び替えたあとも、背景を白と薄い水色の交互にする ===== */
+.home.lp > section.s:nth-of-type(2n){background:#fff}
+.home.lp > section.s:nth-of-type(2n+1){background:#f1f8fc}
+
+/* 外側の対策と、システム内部の監視を比較 */
+.lp #evolution{background:#fff}
+.lp .evolution-intro{display:grid;grid-template-columns:1.12fr 1fr;gap:36px;align-items:center;margin-bottom:40px}
+.lp .evolution-heading .label{border-left:4px solid #8fd4fe;padding-left:14px;margin-bottom:18px}
+.lp .evolution-description{margin-top:22px;font-size:.95rem;line-height:2}
+.lp .evolution-concerns{display:flex;align-items:center;gap:22px;min-width:0}
+.lp .evolution-concerns img{width:36%;height:auto;object-fit:contain}
+.lp .evolution-bubbles{display:flex;flex:1;flex-direction:column;align-items:flex-end;gap:12px}
+.lp .evolution-bubbles p{position:relative;padding:10px 15px;border:2px solid #1f1b18;border-radius:18px;background:#fff;font-size:.85rem;font-weight:700;text-align:center}
+.lp .evolution-bubbles p::after{content:'';position:absolute;right:-7px;top:50%;width:12px;height:12px;background:#fff;border-top:2px solid #1f1b18;border-right:2px solid #1f1b18;transform:translateY(-50%) rotate(45deg)}
+.lp .evolution-bubbles .is-worried{color:#bb3658;border-color:#ff799a}
+.lp .evolution-bubbles .is-worried::after{border-color:#ff799a}
+.lp .evolution-comparison{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:10px;align-items:stretch}
+.lp .evolution-card{padding:28px;min-width:0}
+.lp .evolution-card h3{font-size:1.3rem}
+.lp .evolution-card-after{box-shadow:5px 6px 0 #8fd4fe}
+.lp .evolution-card ul{list-style:none;padding:0;margin-top:18px}
+.lp .evolution-card li{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-top:1px solid #dce5eb;font-size:.9rem;font-weight:600}
+.lp .evolution-card li:last-child{border-bottom:1px solid #dce5eb}
+.lp .evolution-card li>span{display:flex;align-items:center;justify-content:center;flex:none;width:22px;height:22px;border-radius:50%;background:#929da7;color:#fff;font-size:.8rem;margin-top:2px}
+.lp .evolution-card-after li>span{background:#176187}
+.lp .evolution-next{align-self:center;text-align:center;font-size:2rem;color:#176187}
+.lp .evolution-warning{margin-top:18px;padding:14px;border-radius:12px;background:#fff0f3;color:#bb3658;font-size:.9rem;font-weight:700}
+.lp .evolution-summary{margin-top:30px;padding:22px;border-radius:20px;background:#d9effd;text-align:center;font-size:1.15rem;font-weight:700}
+.lp .evolution-diagram{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:22px;padding:20px 12px;background:#f1f8fc;border-radius:12px;min-height:240px;font-size:.8rem}
+.lp .evolution-threat{color:#bb3658;font-weight:700}
+.lp .evolution-barrier{padding:5px 16px;border:2px solid #929da7;border-radius:8px;background:#fff;font-weight:700}
+.lp .evolution-system{display:flex;flex-direction:column;align-items:center;color:#667582;gap:3px}
+.lp .evolution-system strong{font-size:.8rem;font-weight:600}
+.lp .is-monitored .evolution-barrier{border-color:#176187;background:#d9effd}
+.lp .is-monitored .evolution-system{color:#176187}
+@media(max-width:900px){
+.lp .evolution-intro{grid-template-columns:1fr;gap:28px}
+.lp .evolution-concerns{max-width:500px;margin-inline:auto;width:100%}
+.lp .evolution-comparison{grid-template-columns:1fr;gap:18px}
+.lp .evolution-next{transform:rotate(90deg);line-height:1}
+.lp .evolution-card{padding:24px}
+.lp .evolution-summary{font-size:1rem;padding:20px}
+}
+@media(max-width:480px){.lp .evolution-concerns{gap:14px}.lp .evolution-bubbles p{font-size:.75rem;padding:9px 10px}.lp .evolution-concerns img{width:30%}}
+.lp .evolution-card-illustration{margin-top:22px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;overflow:hidden}
+.lp .evolution-card-illustration img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}
+
+/* セキュリティの現状と修正までの時間 */
+.lp .security-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.lp .security-stat{padding:26px 18px;text-align:center}
+.lp .security-number{color:#176187;font-size:clamp(2.8rem,4.8vw,4rem);font-weight:800;line-height:1.2;letter-spacing:-.04em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lp .security-number span{font-size:1.25rem;letter-spacing:0;margin-left:4px}
+.lp .security-stat h3{font-size:1rem;margin-top:12px}
+.lp .security-stat-detail{font-size:.85rem;margin-top:8px;line-height:1.8}
+.lp .security-data-message{text-align:center;font-size:1.2rem;font-weight:700;margin-top:30px}
+.lp .security-source{margin-top:26px;font-size:.75rem;line-height:1.9;color:#52616d;overflow-wrap:anywhere}
+.lp .security-source a{text-decoration:underline;text-underline-offset:3px}
+.lp .security-timeline{padding:32px}
+.lp .security-time-row{display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;align-items:center;margin:12px 0 26px}
+.lp .security-time-row h3{font-size:1rem}
+.lp .security-time-row p{font-size:.8rem;color:#52616d;margin-top:4px}
+.lp .security-bar-track{display:flex;align-items:center;gap:14px;min-width:0}
+.lp .security-bar-track strong{font-size:1.8rem;white-space:nowrap;line-height:1.2}
+.lp .security-bar{display:block;height:38px;border-radius:10px}
+.lp .security-bar.attack{width:7%;min-width:26px;background:#bf365a}
+.lp .security-bar.attack+strong{color:#bf365a}
+.lp .security-bar.repair{flex:1;background:#9bc5df}
+.lp .security-gap-label{text-align:center;padding:9px 14px;border:1.5px dashed #bf365a;border-radius:8px;color:#a22d4b;font-weight:700;background:repeating-linear-gradient(-45deg,#fff0f4,#fff0f4 8px,#fff 8px,#fff 16px)}
+.lp .security-chart-note{margin-top:14px;font-size:.75rem;color:#52616d}
+.lp .security-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:22px}
+.lp .security-fact{display:flex;gap:20px;align-items:center;padding:24px}
+.lp .security-fact h3{font-size:1rem}
+.lp .security-fact>div>p{font-size:.85rem;margin-top:6px}
+@media(max-width:900px){.lp .security-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lp .security-facts{grid-template-columns:1fr}.lp .security-time-row{grid-template-columns:155px minmax(0,1fr)}.lp .security-timeline{padding:24px}}
+@media(max-width:540px){.lp .security-stat-grid{gap:14px}.lp .security-stat{padding:22px 12px}.lp .security-number{font-size:2.6rem}.lp .security-number span{font-size:1rem}.lp .security-time-row{grid-template-columns:1fr;gap:12px}.lp .security-bar-track strong{font-size:1.5rem}.lp .security-data-message{font-size:1rem}.lp .security-fact{padding:20px;gap:14px}}
+
+/* 2行だった見出しを、表示幅に合わせて1行に調整 */
+.lp #evolution .evolution-heading h2{font-size:clamp(.9rem,1.35vw,1.15rem)}
+.lp #security-data h2{font-size:clamp(1rem,2vw,1.6rem)}
+@media(max-width:900px){
+.lp #evolution .evolution-heading h2{font-size:clamp(.9rem,2.8vw,1.5rem)}
+}
+@media(max-width:600px){
+.lp .s h2{white-space:normal;overflow-wrap:anywhere}
+.lp #evolution .evolution-heading h2{font-size:1rem}
+.lp #security-data h2{font-size:1.2rem}
+}
+
+/* 前半も後半と同じ見出し・カード・余白に統一 */
+.lp #problem .problem-heading h2{border-left:3px solid #8fd4fe;padding-left:.65em;font-size:clamp(1.2rem,2.2vw,1.8rem);line-height:1.5}
+.lp .problem-heading-emphasis{margin-top:0;font-size:1em;background:none}
+.lp .problem-heading-rays{display:none}
+.lp .problem-circles{gap:24px;margin-bottom:0}
+.lp .problem-design .problem-circle{max-width:none;aspect-ratio:auto;border:2.5px solid #1f1b18;border-radius:22px;box-shadow:5px 6px 0 #1f1b18;padding:24px 16px;justify-content:space-between;gap:12px}
+.lp .problem-person-icon{position:static;transform:none;width:140px;height:140px;max-width:100%;border-radius:0;background:none}
+.lp .problem-person-icon img{border-radius:0}
+.lp .problem-circle-title{font-size:.95rem;line-height:1.8}
+.lp #security-data .head,.lp #solution .head{margin-bottom:44px}
+.lp #security-data h2{font-size:clamp(1.2rem,2.2vw,1.8rem)}
+.lp .security-stat-grid{gap:24px}
+.lp #security-data .security-stat{padding:0;overflow:hidden;text-align:center;display:flex;flex-direction:column}
+.lp #security-data .security-stat h3{margin:0;padding:14px 10px;border-bottom:2.5px solid #1f1b18;background:#d9effd;font-size:1rem;font-weight:700}
+.lp #security-data .security-number{font-size:3rem;font-weight:700;letter-spacing:-.02em;color:#1f1b18;padding:24px 12px 8px}
+.lp #security-data .security-stat-detail{margin:0;padding:0 16px 24px;font-size:.85rem;font-weight:400}
+.lp #security-data .security-data-message{font-size:1rem;margin-top:28px;padding:18px 22px;border-radius:13px;background:#d9effd}
+.lp #security-data .security-source{margin-top:20px;font-weight:400}
+.lp .evolution-intro{grid-template-columns:1fr;gap:0;margin-bottom:32px}
+.lp .evolution-heading{margin-bottom:28px}
+.lp .evolution-heading .label{border:0;padding:0;margin-bottom:6px}
+.lp #evolution .evolution-heading h2{font-size:clamp(1.2rem,2.2vw,1.8rem)}
+.lp .evolution-description{margin-top:10px;font-size:1rem;line-height:1.9}
+.lp .evolution-concerns{width:min(100%,540px);margin-inline:auto;gap:26px}
+.lp .evolution-concerns img{width:34%}
+.lp .evolution-card{padding:26px 24px}
+.lp .evolution-card h3{font-size:1.15rem}
+.lp .evolution-card-after{box-shadow:5px 6px 0 #1f1b18}
+.lp .evolution-card li{font-weight:400;line-height:1.8}
+.lp .evolution-card li>span{border:1.5px solid #1f1b18;background:#ffe86c;color:#1f1b18;border-radius:6px}
+.lp .evolution-warning{color:#1f1b18;background:#fff0f3;font-size:.9rem;font-weight:400}
+.lp .evolution-summary{font-size:1rem;border-radius:13px;padding:18px 22px}
+.lp .solution-card-copy{padding:26px 24px}
+@media(max-width:900px){.lp .problem-circles{max-width:none}.lp .security-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){
+.lp #problem .problem-heading h2,.lp #security-data h2,.lp #evolution .evolution-heading h2{font-size:1.2rem;white-space:normal}
+.lp .problem-circles{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.lp .problem-design .problem-circle{padding:20px 12px;width:100%}
+.lp .problem-circle-title{font-size:.85rem}
+.lp .problem-person-icon{width:120px;height:120px}
+.lp .security-stat-grid{gap:16px}
+.lp #security-data .security-stat h3{font-size:.9rem;padding:12px 8px}
+.lp #security-data .security-number{font-size:2.5rem;padding-top:20px}
+.lp .evolution-description{font-size:.9rem}
+}

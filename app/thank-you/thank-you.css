@@ -1,0 +1,15 @@
+.thank-you-page{background:#f1f8fc;color:var(--ink);padding:64px 0}
+.thank-you-card{max-width:800px;margin-inline:auto;padding:48px 40px;text-align:center;border:2.5px solid #1f1b18;border-radius:22px;box-shadow:5px 6px 0 #1f1b18;background:#fff}
+.thank-you-check{display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;background:#d9effd;border:2.5px solid #1f1b18;border-radius:50%;color:#176187;margin-bottom:18px}
+.thank-you-label{color:#176187;font-size:.78rem;font-weight:700;letter-spacing:.13em;margin:0 0 10px}
+.thank-you-card h1{font-size:clamp(1.25rem,2.2vw,1.8rem);line-height:1.6;margin:0}
+.thank-you-message{font-size:1rem;line-height:2;margin:20px 0 0}
+.thank-you-details{text-align:left;background:#f1f8fc;border-radius:13px;padding:22px 24px;margin:28px 0}
+.thank-you-details h2{font-size:1rem;border-left:3px solid #8fd4fe;padding-left:10px;margin:0 0 10px}
+.thank-you-details p{font-size:.9rem;line-height:1.9;margin:0}
+.thank-you-home{background:#d9effd;color:var(--ink)}
+.thank-you-contact{margin:32px auto 0;text-align:center;max-width:800px;font-size:.85rem;line-height:1.9}
+.thank-you-contact p{margin:8px 0}
+.thank-you-contact>div{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 28px}
+.thank-you-contact a{font-size:1rem;font-weight:700;color:#176187;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+@media(max-width:600px){.thank-you-page{padding:36px 0}.thank-you-card{padding:30px 20px}.thank-you-details{padding:18px}.thank-you-contact>div{flex-direction:column;gap:6px}.thank-you-message{font-size:.95rem}}
