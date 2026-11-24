@@ -5,7 +5,7 @@ import './globals.css';
 
 const siteTitle = 'seQmo.｜セキュリティに、AIという視点を';
 const siteDescription = '古い業務システムの見直し・作り直しから、保守・セキュリティ監視までまとめてサポート　AIでアクセスや操作、稼働状況を分析し、システムの中を見える化します';
-const shareLogo = { url: '/seqmo-logo.png', width: 1808, height: 495, alt: 'seQmo.' };
+const shareLogo = { url: '/seqmo-share-white.jpg', width: 1200, height: 630, alt: 'seQmo.' };
 
 export const metadata = {
   title: { default: siteTitle, template: '%s｜seQmo.' },
