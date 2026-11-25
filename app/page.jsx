@@ -21,7 +21,7 @@ export default function Home() {
         <div className="hero-design" data-design="layer"><div className="hero-copy">
           <p className="hero-english hero-english-label">INTELLIGENCE BEHIND SECURITY.</p>
           <h1>セキュリティに<br/><span className="hero-title-accent">AIという視点</span>を</h1>
-          <p>「動いているから大丈夫」で、使い続けていませんか？<br/>古い業務システムの見直し・作り直しから、保守・セキュリティ監視まで。日々の業務を支えるシステムを、まとめてサポートします。</p>
+          <p>「動いているから大丈夫」で、使い続けていませんか？<br/>古い業務システムの見直し・作り直しから、保守・セキュリティ監視まで　日々の業務を支えるシステムを、まとめてサポートします</p>
           <div className="hero-cta">
             <Link className="hero-cta-primary" href="/contact/">無料診断を相談する<span className="header-contact-arrow-circle" aria-hidden="true">
                 <svg className="header-contact-icon" width="27" height="14" viewBox="0 0 27 14" fill="none">

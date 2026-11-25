@@ -5,7 +5,7 @@ export function Evolution() {
   const after = ['システムの状態を継続的に監視', '異常やリスクを早期に検知', 'AIで原因や影響を分かりやすく分析', '必要な対応につなげられる'];
   return <section className="s white" id="evolution"><div className="s-inner">
     <div className="evolution-intro">
-      <div className="head evolution-heading"><p className="label">SECURITY CHECK</p><h2>そのセキュリティ対策、本当に十分ですか？</h2><p className="evolution-description">ファイアウォール・UTM・ウイルス対策ソフトなどで「外側」は守れても<br className="pc"/>システム内部の弱点や設定の問題は見えません</p></div>
+      <div className="head evolution-heading"><p className="label">SECURITY CHECK</p><h2><span className="heading-phrase">そのセキュリティ対策</span><span className="heading-phrase">本当に十分ですか？</span></h2><p className="evolution-description">ファイアウォール・UTM・ウイルス対策ソフトなどで「外側」は守れても<br className="pc"/>システム内部の弱点や設定の問題は見えません</p></div>
       <div className="evolution-concerns"><div className="evolution-bubbles">{['UTMは入れている', 'ウイルス対策ソフトもある', 'ファイアウォールも設定している', 'これで大丈夫…？'].map((text, i) => <p className={i === 3 ? 'is-worried' : ''} key={text}>{text}</p>)}</div><img src="/security-worried-worker.png" width="1254" height="1254" alt="セキュリティ対策が十分か悩む担当者" loading="lazy"/></div>
     </div>
     <div className="evolution-comparison">
@@ -13,7 +13,7 @@ export function Evolution() {
       <span className="evolution-next" aria-hidden="true">→</span>
       <article className="panel evolution-card evolution-card-after"><p className="label">WITH seQmo.</p><h3><BrandText>seQmo.で、もう一歩先の対策</BrandText></h3><div className="evolution-card-illustration"><img src="/security-monitored-office.png" width="1254" height="1254" alt="外側の対策に加え、seQmo.でシステムの状態や異常を監視するオフィスのイラスト" loading="lazy"/></div><ul>{after.map(text => <li key={text}><span aria-hidden="true">✓</span>{text}</li>)}</ul></article>
     </div>
-    <p className="evolution-summary">今の外側の対策に、<BrandText>seQmo.</BrandText>の「見える・気づける」監視をプラス</p>
+    <p className="evolution-summary">今の外側の対策に<BrandText>seQmo.</BrandText>の「見える・気づける」監視をプラス</p>
   </div></section>;
 }
 
@@ -27,7 +27,7 @@ export function Rebuild() {
   return <section className="s white" id="rebuild"><div className="s-inner">
     <div className="head">
       <p className="label">FROM CHECK TO REBUILD</p>
-      <h2>改修・作り直しが必要なシステムにも対応</h2>
+      <h2><span className="heading-phrase">システムの改修・再構築も</span><span className="heading-phrase">サポート</span></h2>
       <p className="sub" style={{fontWeight:"400",lineHeight:"2"}}><BrandText>{'診断結果をもとに必要な追加調査を行い、MOGCIAが改修・作り直しをご提案します'}</BrandText><br/><BrandText>{'既存の仕組みを活かす改修か、新たなシステムへの再構築か、状態とご要望に合わせてご提案します'}</BrandText></p>
     </div>
     <ol className="rebuild-flow">

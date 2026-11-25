@@ -293,13 +293,13 @@ mark{color:inherit;background:linear-gradient(transparent 62%,#ffe86c 62%,#ffe86
 .lp .s h2 {
   display: inline-block;
   max-width: 100%;
-  padding: .25em 0 .25em .65em;
-  border-left: 3px solid #8fd4fe;
+  padding: .25em 0;
+  border-left: 0;
   background: none;
   color: var(--ink);
   font-size: clamp(1.2rem, 2.2vw, 1.8rem);
   line-height: 1.5;
-  text-align: left;
+  text-align: inherit;
   white-space: nowrap;
 }
 @media (max-width: 600px) {

@@ -13,10 +13,10 @@ const ITEMS = [
 ];
 
 const PREVIEWS = [
-  { src: '/seqmo-access-control.jpg', width: 1440, height: 1114, alt: 'seQmo.のアクセス制限設定画面。許可するネットワークとアクセスルール、最近のアクセス判定を確認できます' },
-  { src: '/seqmo-login-protection.jpg', width: 1440, height: 1216, alt: 'seQmo.のアカウント・ログイン保護画面。対象アカウントやログインセッション、一時停止などの保護操作を確認できます' },
-  { src: '/seqmo-data-protection.jpg', width: 1440, height: 1286, alt: 'seQmo.の重要データの保護画面。データの利用権限や出力・重要操作の一時的な制限を確認できます' },
-  { src: '/seqmo-emergency-protection.jpg', width: 1440, height: 1380, alt: 'seQmo.の緊急保護モード画面。機能ごとの保護状態や制限内容、解除・復旧の手順を確認できます' },
+  { src: '/seqmo-access-control.jpg', width: 1440, height: 1114, alt: 'seQmo.のアクセス制限設定画面　許可するネットワークとアクセスルール、最近のアクセス判定を確認できます' },
+  { src: '/seqmo-login-protection.jpg', width: 1440, height: 1216, alt: 'seQmo.のアカウント・ログイン保護画面　対象アカウントやログインセッション、一時停止などの保護操作を確認できます' },
+  { src: '/seqmo-data-protection.jpg', width: 1440, height: 1286, alt: 'seQmo.の重要データの保護画面　データの利用権限や出力・重要操作の一時的な制限を確認できます' },
+  { src: '/seqmo-emergency-protection.jpg', width: 1440, height: 1380, alt: 'seQmo.の緊急保護モード画面　機能ごとの保護状態や制限内容、解除・復旧の手順を確認できます' },
 ];
 
 export default function ProtectionTabs() {

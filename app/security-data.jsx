@@ -4,22 +4,21 @@ const rapid7 = 'https://www.rapid7.com/blog/post/tr-q3-2026-threat-update-attack
 
 export function SecurityData() {
   const stats = [
-    ['約7', '割', '組織的な体制が未整備', 'セキュリティの担当・役割が明確でない'],
-    ['73', '万円', '被害額の平均', '最大で1億円のケースも'],
-    ['5.8', '日', '復旧までの平均日数', '復旧に50日以上かかった企業も'],
-    ['約7', '割', '取引先にも影響', 'サイバーインシデントが発生した企業のうち'],
+    ['約7', '割', 'セキュリティ体制が未整備'],
+    ['73', '万円', '平均被害額'],
+    ['5.8', '日', '復旧するまでの平均日数'],
+    ['約7', '割', '取引先にも影響した企業'],
   ];
   return <section className="s security-data" id="security-data"><div className="s-inner">
-    <div className="head"><p className="label">SECURITY REPORT</p><h2>中小企業のセキュリティ、実はこんな状況です</h2></div>
-    <div className="security-stat-grid">{stats.map(([value, unit, title, detail]) => <article className="panel security-stat" key={title}><h3>{title}</h3><p className="security-number">{value}<span>{unit}</span></p><p className="security-stat-detail">{detail}</p></article>)}</div>
-    <p className="security-data-message">「うちは小さいから大丈夫」は、もう通用しません</p>
+    <div className="head"><p className="label">SECURITY REPORT</p><h2>セキュリティ対策の実態</h2><p className="sub security-intro"><span className="security-intro-line"><span className="intro-phrase">セキュリティ対策は</span><span className="intro-phrase">日々の業務の中で後回しになりがちです</span></span><span className="security-intro-line"><span className="intro-phrase">必要性を感じにくい</span><span className="intro-phrase">費用対効果が分からない</span></span><span className="security-intro-line"><span className="intro-phrase">コストがかかるといった理由で</span><span className="intro-phrase">対策への投資に踏み出せない企業も多いです</span></span></p></div>
+    <div className="security-stat-grid">{stats.map(([value, unit, title]) => <article className="security-stat" key={title}><h3>{title}</h3><p className="security-number">{value}<span>{unit}</span></p></article>)}</div>
     <p className="security-source">出典：<a href={ipa}>IPA「2024年度 中小企業における情報セキュリティ対策の実態調査」速報版（2025年2月）</a><br/>全国の中小企業4,191社への調査　被害額・復旧日数は過去3期内に発生したサイバーインシデントについての平均</p>
   </div></section>;
 }
 
 export function ResponseGap() {
   return <section className="s security-data" id="response-gap"><div className="s-inner">
-    <div className="head"><p className="label">DATA</p><h2>攻撃は速く、直すのは遅い</h2><p className="sub">公開されたシステムの弱点は、短期間で攻撃に使われています<br/>一方で、修正が完了するまでには時間がかかっています</p></div>
+    <div className="head"><p className="label">DATA</p><h2><span className="heading-phrase">攻撃は速く</span><span className="heading-phrase">直すのは遅い</span></h2><p className="sub">公開されたシステムの弱点は、短期間で攻撃に使われています<br/>一方で、修正が完了するまでには時間がかかっています</p></div>
     <div className="panel security-timeline">
       <div className="security-time-row"><div><h3>攻撃に使われるまで</h3><p>高深刻度の脆弱性の公開から<br/>悪用までの平均</p></div><div className="security-bar-track"><span className="security-bar attack"/><strong>約3日</strong></div></div>
       <div className="security-time-row"><div><h3>修正が完了するまで</h3><p>脆弱性の完全な修正に<br/>要した日数の中央値</p></div><div className="security-bar-track"><span className="security-bar repair"/><strong>約43日</strong></div></div>

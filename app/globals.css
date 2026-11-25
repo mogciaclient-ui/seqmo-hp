@@ -163,7 +163,7 @@ input[type=radio],input[type=checkbox] { width:1.1rem; height:1.1rem; accent-col
 .contact-aside h2 { font-size:1.17rem; }
 .contact-aside p { margin:.4rem 0; }
 .contact-number { display:inline-block; margin-top:.25rem; font-size:clamp(1.28rem,2.5vw,2rem); font-weight:700; }
-footer { background:#eaf7ff; color:var(--ink); border-top:1px solid #c9e1ef; padding:40px 0; font-size:.87rem; }
+footer { background:#fff; color:var(--ink); border-top:1px solid #c9e1ef; padding:40px 0; font-size:.87rem; }
 .footer-inner { display:flex; align-items:flex-start; justify-content:space-between; gap:25px; }
 .footer-brand { display:inline-block; margin-bottom:.5rem; padding:0; }
 .footer-brand img { display:block; width:120px; height:auto; mix-blend-mode:multiply; }
@@ -326,3 +326,17 @@ footer { background:#eaf7ff; color:var(--ink); border-top:1px solid #c9e1ef; pad
 }
 
 .brand-dot { color: #8fd4fe; }
+
+/* Narrow headers show only the logo and contact button. */
+@media (max-width: 900px) {
+  .header-inner { min-height:64px; gap:12px; }
+  .header-nav { display:none; }
+  .brand img { width:88px; }
+  .header .header-contact { min-height:40px; padding:4px 6px 4px 14px; gap:8px; }
+}
+@media (max-width: 380px) {
+  .header-inner { gap:8px; }
+  .brand img { width:76px; }
+  .header .header-contact { padding:8px 12px; font-size:.8125rem; }
+  .header .header-contact-arrow-circle { display:none; }
+}
